@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ViewUI example</title>
+    <link rel="stylesheet" type="text/css" href="http://unpkg.com/view-design/dist/styles/iview.css">
+    <script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
+    <script type="text/javascript" src="http://unpkg.com/view-design/dist/iview.min.js"></script>
+</head>
+<body>
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_cf4a8"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.MediumWidget(
+  {
+  "symbols": [
+    [
+      "BTC",
+      "BINANCE:BTCUSDT|12M"
+    ],
+    [
+      "ETH",
+      "BINANCE:ETHUSDT|12M"
+    ],
+    [
+      "XRP",
+      "BINANCE:XRPUSDT|12M"
+    ]
+  ],
+  "chartOnly": false,
+  "width": 1000,
+  "height": 400,
+  "locale": "zh_CN",
+  "colorTheme": "dark",
+  "gridLineColor": "rgba(42 ,46, 57, 0)",
+  "fontColor": "#787B86",
+  "isTransparent": false,
+  "autosize": false,
+  "showFloatingTooltip": true,
+  "scalePosition": "no",
+  "scaleMode": "Normal",
+  "fontFamily": "Trebuchet MS, sans-serif",
+  "noTimeScale": false,
+  "chartType": "area",
+  "lineColor": "#2962FF",
+  "bottomColor": "rgba(41, 98, 255, 0)",
+  "topColor": "rgba(41, 98, 255, 0.3)",
+  "container_id": "tradingview_cf4a8"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</body>
+</html>
